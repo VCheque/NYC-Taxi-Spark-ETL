@@ -44,3 +44,7 @@ The pipeline was built to derive key analytical features essential for business 
 2.  **Derived Features:** Calculated **Trip Duration (seconds)** and **Average Speed (MPH)** to enable congestion and driver efficiency analysis.
 3.  **Complex Analysis (Window Function):** Used a **Spark Window Function** partitioned by `Pickup_Zone` and ordered by `date` to calculate the **7-day Rolling Average Fare**. This metric is critical for identifying transient pricing trends and market fluctuations.
 4.  **Optimized Load:** Final data was partitioned by `pickup_year` and `pickup_month` into **Delta Lake** to optimize query performance for BI tools.
+
+### Power BI Integration
+
+The results of the ETL process was a 
